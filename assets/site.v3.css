@@ -246,6 +246,11 @@ img.poster, figure.poster img { border: 1px solid var(--mist); }
 .names { columns: 2; column-gap: var(--s5); list-style: none; padding: 0; margin: 0; }
 @media (min-width: 900px) { .names { columns: 3; } }
 .names li { break-inside: avoid; padding: 6px 0; border-bottom: 1px solid var(--mist); margin: 0; }
+/* a row of posters at their own proportions (the .photos grid would crop them to 4:3) */
+.posters { display: grid; gap: var(--s3); grid-template-columns: 1fr 1fr; }
+@media (min-width: 900px) { .posters { grid-template-columns: repeat(4, 1fr); } }
+.posters img { width: 100%; height: auto; border: 1px solid var(--mist); }
+.posters figcaption { margin-top: var(--s1); }
 /* partner and sponsor logos, as the current site shows them */
 .logos { list-style: none; padding: 0; margin: 0 0 var(--s5); display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: var(--s2); }
 .logos li { margin: 0; border: 1px solid var(--mist); padding: var(--s2); display: flex; align-items: center; justify-content: center; min-height: 96px; }
