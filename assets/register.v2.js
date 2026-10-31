@@ -1,8 +1,13 @@
 // Turns the class registration form into an email to the office, so several classes fit on one form with no server or account.
+// A link ending in ?class=stem ticks the STEM Club box.
 (function () {
   var form = document.getElementById('reg');
   if (!form) return;
   var err = document.getElementById('reg-err');
+  if (/[?&]class=stem(&|$)/.test(window.location.search)) {
+    var box = form.querySelector('[data-preset=stem]');
+    if (box) box.checked = true;
+  }
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     var boxes = form.querySelectorAll('input[type=checkbox]:checked');

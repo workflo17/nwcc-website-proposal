@@ -9,10 +9,10 @@
 <title>타코마 수업 등록 | NW Community Centers</title>
 <meta name="description" content="NW Community Centers 수업 등록: STEM, 문화, 미술, 음악. 한 장의 양식으로 여러 수업을 신청할 수 있습니다.">
 <link rel="canonical" href="https://www.nwcommunitycenters.org/ko/register"><link rel="alternate" hreflang="en" href="https://www.nwcommunitycenters.org/register"><link rel="alternate" hreflang="ko" href="https://www.nwcommunitycenters.org/ko/register"><link rel="alternate" hreflang="x-default" href="https://www.nwcommunitycenters.org/register">
-<meta property="og:title" content="타코마 수업 등록 | NW Community Centers"><meta property="og:site_name" content="NW Community Centers"><meta property="og:url" content="https://www.nwcommunitycenters.org/ko/register"><meta property="og:description" content="NW Community Centers 수업 등록: STEM, 문화, 미술, 음악. 한 장의 양식으로 여러 수업을 신청할 수 있습니다."><meta property="og:image" content="https://www.nwcommunitycenters.org/assets/og/index-ko.jpg"><meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image"><meta property="og:title" content="타코마 수업 등록 | NW Community Centers"><meta property="og:site_name" content="NW Community Centers"><meta property="og:url" content="https://www.nwcommunitycenters.org/ko/register"><meta property="og:description" content="NW Community Centers 수업 등록: STEM, 문화, 미술, 음악. 한 장의 양식으로 여러 수업을 신청할 수 있습니다."><meta property="og:image" content="https://www.nwcommunitycenters.org/assets/og/index-ko.jpg"><meta property="og:type" content="website">
 <link rel="icon" href="/nwcc-website-proposal/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="/nwcc-website-proposal/favicon-180.png">
 <link rel="preload" href="/nwcc-website-proposal/fonts/noto-sans-kr.v4.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/nwcc-website-proposal/fonts/source-sans-3.v1.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/nwcc-website-proposal/assets/site.v6.css"><script src="/nwcc-website-proposal/assets/register.v1.js" defer></script>
+<link rel="stylesheet" href="/nwcc-website-proposal/assets/site.v6.css"><script src="/nwcc-website-proposal/assets/register.v2.js" defer></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "NGO", "@id": "https://www.nwcommunitycenters.org/#org", "name": "NW Community Centers", "alternateName": ["NWCC", "Northwest Culture Foundation"], "url": "https://www.nwcommunitycenters.org/", "logo": "https://www.nwcommunitycenters.org/assets/img/logo-mark-512.png", "foundingDate": "1987", "taxID": "91-2025901", "nonprofitStatus": "Nonprofit501c3", "email": "nwcf1987@gmail.com", "telephone": "+1-253-468-8539", "areaServed": "Pierce County, Washington", "address": {"@type": "PostalAddress", "streetAddress": "9702 B St E", "addressLocality": "Tacoma", "addressRegion": "WA", "postalCode": "98445", "addressCountry": "US"}}, {"@type": "WebSite", "url": "https://www.nwcommunitycenters.org/", "name": "NW Community Centers", "publisher": {"@id": "https://www.nwcommunitycenters.org/#org"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://www.nwcommunitycenters.org/ko/"}, {"@type": "ListItem", "position": 2, "name": "수업 등록", "item": "https://www.nwcommunitycenters.org/ko/register"}]}]}</script>
 </head>
 <body class="ko">
@@ -35,7 +35,7 @@
 <fieldset>
 <legend>수업 (하나 이상 선택)</legend>
 <p class="group">STEM</p>
-<label class="check"><input type="checkbox" name="수업" value="차세대 STEM 클럽"> 차세대 STEM 클럽</label>
+<label class="check"><input type="checkbox" name="수업" value="차세대 STEM 클럽" data-preset="stem"> 차세대 STEM 클럽</label>
 <p class="group">문화</p>
 <label class="check"><input type="checkbox" name="수업" value="토요 교육 및 문화 수업"> 토요 교육 및 문화 수업</label>
 <label class="check"><input type="checkbox" name="수업" value="성인 무용 / 공연 예술"> 성인 무용 / 공연 예술</label>
@@ -58,8 +58,8 @@
 <legend>부모 또는 보호자</legend>
 <label class="field">이름 <input type="text" name="부모 또는 보호자" autocomplete="name" required></label>
 <label class="field">전화번호 <input type="tel" name="전화번호" autocomplete="tel" required></label>
-<label class="field">이메일 <input type="email" name="이메일" autocomplete="email" spellcheck="false"></label>
-<label class="field">전달 사항 <textarea name="전달 사항" rows="3"></textarea></label>
+<label class="field">이메일 (선택) <input type="email" name="이메일" autocomplete="email" spellcheck="false"></label>
+<label class="field">전달 사항 (선택) <textarea name="전달 사항" rows="3"></textarea></label>
 </fieldset>
 <p class="err" id="reg-err" role="alert" hidden>수업을 하나 이상 선택해 주세요.</p>
 <p><button class="btn" type="submit">등록 보내기</button></p>
