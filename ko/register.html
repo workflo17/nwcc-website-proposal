@@ -11,8 +11,8 @@
 <link rel="canonical" href="https://www.nwcommunitycenters.org/ko/register"><link rel="alternate" hreflang="en" href="https://www.nwcommunitycenters.org/register"><link rel="alternate" hreflang="ko" href="https://www.nwcommunitycenters.org/ko/register"><link rel="alternate" hreflang="x-default" href="https://www.nwcommunitycenters.org/register">
 <meta name="twitter:card" content="summary_large_image"><meta property="og:title" content="타코마 수업 등록 | NW Community Centers"><meta property="og:site_name" content="NW Community Centers"><meta property="og:url" content="https://www.nwcommunitycenters.org/ko/register"><meta property="og:description" content="NW Community Centers 수업 등록: STEM, 문화, 미술, 음악. 한 장의 양식으로 여러 수업을 신청할 수 있습니다."><meta property="og:image" content="https://www.nwcommunitycenters.org/assets/og/index-ko.jpg"><meta property="og:type" content="website">
 <link rel="icon" href="/nwcc-website-proposal/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="/nwcc-website-proposal/favicon-180.png">
-<link rel="preload" href="/nwcc-website-proposal/fonts/noto-sans-kr.v4.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/nwcc-website-proposal/fonts/source-sans-3.v1.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/nwcc-website-proposal/assets/site.v6.css"><script src="/nwcc-website-proposal/assets/register.v2.js" defer></script>
+<link rel="preload" href="/nwcc-website-proposal/fonts/noto-sans-kr.v5.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/nwcc-website-proposal/fonts/source-sans-3.v1.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/nwcc-website-proposal/assets/site.v7.css"><script src="/nwcc-website-proposal/assets/register.v3.js" defer></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "NGO", "@id": "https://www.nwcommunitycenters.org/#org", "name": "NW Community Centers", "alternateName": ["NWCC", "Northwest Culture Foundation"], "url": "https://www.nwcommunitycenters.org/", "logo": "https://www.nwcommunitycenters.org/assets/img/logo-mark-512.png", "foundingDate": "1987", "taxID": "91-2025901", "nonprofitStatus": "Nonprofit501c3", "email": "nwcf1987@gmail.com", "telephone": "+1-253-468-8539", "areaServed": "Pierce County, Washington", "address": {"@type": "PostalAddress", "streetAddress": "9702 B St E", "addressLocality": "Tacoma", "addressRegion": "WA", "postalCode": "98445", "addressCountry": "US"}}, {"@type": "WebSite", "url": "https://www.nwcommunitycenters.org/", "name": "NW Community Centers", "publisher": {"@id": "https://www.nwcommunitycenters.org/#org"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://www.nwcommunitycenters.org/ko/"}, {"@type": "ListItem", "position": 2, "name": "수업 등록", "item": "https://www.nwcommunitycenters.org/ko/register"}]}]}</script>
 </head>
 <body class="ko">
@@ -31,7 +31,8 @@
 <div class="wrap">
 <h1>수업 등록</h1>
 <p class="lead">STEM, 문화, 미술, 음악 수업은 이 양식으로 등록해 주세요. 한 장의 양식으로 여러 수업을 신청할 수 있습니다.</p>
-<form class="reg" id="reg" action="mailto:nwcf1987@gmail.com?subject=Class%20registration" method="post" enctype="text/plain" data-to="nwcf1987@gmail.com" data-subject="수업 등록">
+<p>자녀가 두 명 이상이면 자녀마다 양식을 한 장씩 보내 주세요.</p>
+<form class="reg" id="reg" action="mailto:nwcf1987@gmail.com?subject=Class%20registration" method="post" enctype="text/plain" data-to="nwcf1987@gmail.com" data-subject="수업 등록" data-text="+12534688539">
 <fieldset>
 <legend>수업 (하나 이상 선택)</legend>
 <p class="group">STEM</p>
@@ -62,8 +63,9 @@
 <label class="field">전달 사항 (선택) <textarea name="전달 사항" rows="3"></textarea></label>
 </fieldset>
 <p class="err" id="reg-err" role="alert" hidden>수업을 하나 이상 선택해 주세요.</p>
-<p><button class="btn" type="submit">등록 보내기</button></p>
-<p class="caption">이메일 앱이 열리고 입력한 내용이 채워집니다. 그곳에서 보내기를 눌러 주세요. 앱이 열리지 않으면 <a href="mailto:nwcf1987@gmail.com">nwcf1987@gmail.com</a>으로 이메일을 보내거나 <a href="sms:+12534688539">(253) 468-8539</a>로 문자를 보내 주세요.</p>
+<p class="actions"><button class="btn" type="submit">이메일로 보내기</button> <button class="btn ghost" type="submit" data-via="sms">문자로 보내기</button></p>
+<p id="reg-sent" role="status" hidden><strong>메시지가 준비되었습니다. 이메일 또는 문자 앱에서 보내기를 눌러 주세요.</strong></p>
+<p class="caption">각 버튼을 누르면 이메일 또는 문자 앱이 열리고 입력한 내용이 채워집니다. 그곳에서 보내기를 눌러 주세요. 앱이 열리지 않으면 <a href="mailto:nwcf1987@gmail.com">nwcf1987@gmail.com</a>으로 이메일을 보내거나 <a href="sms:+12534688539">(253) 468-8539</a>로 문자를 보내 주세요.</p>
 </form>
 </div>
 </section>

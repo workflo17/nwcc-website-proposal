@@ -48,7 +48,7 @@ hr { border: 0; border-top: 1px solid var(--mist); margin: var(--s5) 0; }
 .narrow { max-width: 760px; margin-left: max(var(--gutter), calc((100% - var(--wrap)) / 2)); }
 .wrap.narrow { margin-left: max(var(--gutter), calc((100vw - var(--wrap)) / 2)); }
 .kr { font-family: var(--kr); }
-@font-face { font-family: "Noto Sans KR Full"; src: url("/nwcc-website-proposal/fonts/noto-sans-kr.v4.woff2") format("woff2"); font-weight: 400 700; font-display: swap; }
+@font-face { font-family: "Noto Sans KR Full"; src: url("/nwcc-website-proposal/fonts/noto-sans-kr.v5.woff2") format("woff2"); font-weight: 400 700; font-display: swap; }
 body.ko p, body.ko li, body.ko td, body.ko dd, body.ko dt, body.ko .caption, body.ko figcaption, body.ko .role, body.ko .nav a, body.ko .btn, body.ko summary, body.ko .draft, body.ko .site-footer { font-family: "Noto Sans KR Full", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
 body.ko { word-break: keep-all; overflow-wrap: anywhere; }
 body.ko .timetable .sig, body.ko .facts dt, body.ko .facts dd, body.ko td:first-child, body.ko .ways h3, body.ko .classes h3, body.ko .person h3, body.ko .address b, body.ko .timetable .kicker { font-family: "Noto Sans KR Full", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
